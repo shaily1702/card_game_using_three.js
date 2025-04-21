@@ -48,7 +48,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Sets the color of the background
-renderer.setClearColor(0x05ECFC);
+renderer.setClearColor(0xACC572);
 renderer.shadowMap.enabled = true;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
@@ -98,7 +98,6 @@ gltfLoader.load('./assets/table.glb', function(glb) {
     });
 });
 
-// Sets a 12 by 12 gird helper
 
 CARDS.forEach(function(card) {
     scene.add(card);
